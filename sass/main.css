@@ -686,7 +686,7 @@ button.log_btn:hover {
 }
 @media screen and (max-width: 768px) {
   .nav_bottom {
-    padding: 5px 15px;
+    padding: 12px 35px;
   }
 }
 .nav_bottom img {
@@ -2157,3 +2157,27 @@ button.log_btn:hover {
     overflow-y: visible;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: none;      /* ✅ 래퍼 자체 숨김 */
+  }
+
+  .page_content {
+    margin-left: 0;     /* ✅ 220px 밀림 제거 */
+    width: 100%;
+  }
+}
+/* PC: 하단바 숨김 */
+.nav_bottom { display: none; }
+
+/* 모바일: 사이드바 숨기고 하단바 보이기 */
+@media (max-width: 768px) {
+  .nav_menu { display: none; }
+  .page_content { margin-left: 0; width: 100%; }
+
+  .nav_bottom { display: flex; }
+  body { padding-bottom: 60px; } /* 하단바에 내용 가리지 않게 */
+}
+
+
