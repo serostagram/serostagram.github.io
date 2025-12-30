@@ -2180,4 +2180,8 @@ button.log_btn:hover {
   body { padding-bottom: 60px; } /* 하단바에 내용 가리지 않게 */
 }
 
-
+a.active img.circle {
+  border: 2px solid #000;
+  padding: 2px;
+  background: #fff;
+}
