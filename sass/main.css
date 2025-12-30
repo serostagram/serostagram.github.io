@@ -1520,10 +1520,28 @@ button.log_btn:hover {
   align-items: center;
   justify-content: flex-start;
 }
-@media screen and (max-width: 498px) {
-  .profile_container .profile_info .cart {
-    flex-direction: column;
-    align-items: flex-start;
+@media screen and (max-width: 768px) {
+  .profile_container .profile_info .cart{
+    justify-content: flex-start !important;
+    align-items: flex-start !important;   /* ✅ 위쪽 정렬 */
+    gap: 12px;                            /* ✅ 간격을 gap으로 관리 */
+  }
+
+  /* ✅ 기존 PC margin-right(2em) 제거 */
+  .profile_container .profile_info .cart .img{
+    margin-right: 0 !important;
+    flex: 0 0 84px;                       /* ✅ 사진영역 폭 */
+  }
+
+  .profile_container .profile_info .cart .img img{
+    width: 84px !important;
+    height: 84px !important;
+    margin-top: 16px;
+  }
+
+  .profile_container .profile_info .cart .info{
+    flex: 1 1 auto;
+    min-width: 0;                         /* ✅ 밀림 방지 */
   }
 }
 .profile_container .profile_info .cart .img {
