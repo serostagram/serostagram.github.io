@@ -1520,6 +1520,7 @@ button.log_btn:hover {
   align-items: center;
   justify-content: flex-start;
 }
+
 @media screen and (max-width: 768px) {
   .profile_container .profile_info .cart{
     justify-content: flex-start !important;
